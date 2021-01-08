@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import firestore from "../modules/firestore.js";
-import firebase from "firebase/app";
 import cookie from "react-cookies";
 
 import Form from "react-bootstrap/Form";
@@ -27,7 +26,7 @@ class Join extends Component {
                     if (resp.docs.length === 1) {
                         if (resp.docs[0].data().stage !== "lobby") {
                             this.setState({error_message: "Please wait for the current round to finish before attempting to join."})
-                        } else if (resp.docs[0].data().player_1 == this.state.player_name) {
+                        } else if (resp.docs[0].data().player_1 === this.state.player_name) {
                             this.setState({error_message: "Player name is unavaliable."})
                         } else {
                             firestore.collection("sessions").doc(resp.docs[0].id).update({

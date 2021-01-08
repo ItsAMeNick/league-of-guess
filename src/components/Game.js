@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from "react-redux";
 import firestore from "../modules/firestore.js";
 import cookie from "react-cookies";
-import firebase from "firebase/app";
 
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
@@ -12,7 +11,6 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Alert from "react-bootstrap/Alert";
 import Table from "react-bootstrap/Table";
 import Form from "react-bootstrap/Form";
-import Image from "react-bootstrap/Image";
 
 import ItemCard from "./ItemCard.js";
 
@@ -28,7 +26,7 @@ function titleCase(string) {
 function countOccurancesOfX(array) {
     let count = 0
     for (let i in array) {
-        if (array[i] == "X") count ++
+        if (array[i] === "X") count ++
     }
     return count
 }
@@ -133,7 +131,7 @@ class Game extends Component {
     async startGame() {
         //Start Game
 
-        if (this.props.player_1 == "" ||  this.props.player_2 == "") return null;
+        if (this.props.player_1 === "" ||  this.props.player_2 === "") return null;
 
         let board = [];
         let possible_items = Object.keys(GAME_VERSIONS[this.props.version])
@@ -146,7 +144,7 @@ class Game extends Component {
         }
         let p1_card = Math.floor(Math.random()*board.length)
         let p2_card = Math.floor(Math.random()*board.length)
-        while (p2_card == p1_card) p2_card = Math.floor(Math.random()*board.length)
+        while (p2_card === p1_card) p2_card = Math.floor(Math.random()*board.length)
         firestore.collection("sessions").doc(this.props.session.db_id).update({
             version: this.props.version,
             stage: "game",
@@ -233,13 +231,13 @@ class Game extends Component {
     handleCardClick(id) {
         if (this.props.is_player_1) {
             let new_board = this.props.round.player_1_board
-            new_board[id] = new_board[id] == "X" ? "" : "X"
+            new_board[id] = new_board[id] === "X" ? "" : "X"
             firestore.collection("sessions").doc(this.props.session.db_id).update({
                 "round.player_1_board": new_board
             })
         } else {
             let new_board = this.props.round.player_2_board
-            new_board[id] = new_board[id] == "X" ? "" : "X"
+            new_board[id] = new_board[id] === "X" ? "" : "X"
             firestore.collection("sessions").doc(this.props.session.db_id).update({
                 "round.player_2_board": new_board
             })

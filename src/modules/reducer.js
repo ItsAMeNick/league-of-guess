@@ -1,5 +1,4 @@
 import _ from "lodash";
-import firestore from "../modules/firestore.js";
 
 const initialState = {
     this_player: "",

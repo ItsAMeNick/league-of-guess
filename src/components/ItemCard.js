@@ -11,14 +11,10 @@ function titleCase(string) {
 }
 
 class ItemCard extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>
-                <img src={require("./../assets/"+this.props.item.image)} />
+                <img src={require("./../assets/"+this.props.item.image)} alt={this.props.item.name} />
                 <strong>{titleCase(this.props.item.name)}</strong>
             </div>
         );

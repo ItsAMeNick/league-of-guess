@@ -28,8 +28,8 @@ class Host extends Component {
                 player_2: "",
                 key: key,
                 stage: "lobby",
-                version: "",
-                game: {
+                version: "champions",
+                round: {
                   player_1_card: "",
                   player_2_card: "",
                   board: [],
