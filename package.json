@@ -1,5 +1,6 @@
 {
   "name": "leagueofguess",
+  "homepage": "http://itsamenick.github.io/league-of-guess",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
