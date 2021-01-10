@@ -28,6 +28,8 @@ class Join extends Component {
                             this.setState({error_message: "Please wait for the current round to finish before attempting to join."})
                         } else if (resp.docs[0].data().player_1 === this.state.player_name) {
                             this.setState({error_message: "Player name is unavaliable."})
+                        } else if (resp.docs[0].data().player_2 !== "") {
+                            this.setState({error_message: "Game is full!"})
                         } else {
                             firestore.collection("sessions").doc(resp.docs[0].id).update({
                                 player_2: this.state.player_name
