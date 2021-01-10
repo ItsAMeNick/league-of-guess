@@ -44,10 +44,12 @@ const ELIMINATED = {
 }
 
 // This is a dirty hack but i got lazy and probably will not even add other packs
-const CHAMPIONS = require("../assets/champions/champions_datapack.json")
+const DB_CHAMPIONS = require("../assets/champions/champions_datapack.json")
+const DB_GODS = require("../assets/gods/gods_datapack.json")
 
 const GAME_VERSIONS = {
-  "champions": CHAMPIONS
+  "champions": DB_CHAMPIONS,
+  "Gods": DB_GODS
 }
 
 

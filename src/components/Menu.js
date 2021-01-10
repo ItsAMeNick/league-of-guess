@@ -69,7 +69,7 @@ class Menu extends Component {
             <div>
                 <Card>
                     <Card.Header>
-                        League of Legends - Guess Who?
+                        Guess Who?
                     </Card.Header>
                     {this.genBody()}
                     <Card.Footer>
