@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "93ec532b6263f13580d55fa002eae6c8",
+    "revision": "7a93533e7bf7ba7bd665f8e48dec9f07",
     "url": "/league-of-guess/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/league-of-guess/static/js/2.653b6006.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "640bdb988f2594a8260b",
-    "url": "/league-of-guess/static/js/main.26beaec0.chunk.js"
+    "revision": "73a830a1e1bd17e248bb",
+    "url": "/league-of-guess/static/js/main.de6ddbdb.chunk.js"
   },
   {
     "revision": "0a13992659b6ca311442",

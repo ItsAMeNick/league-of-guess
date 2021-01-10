@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/league-of-guess/static/js/main.26beaec0.chunk.js",
-    "main.js.map": "/league-of-guess/static/js/main.26beaec0.chunk.js.map",
+    "main.js": "/league-of-guess/static/js/main.de6ddbdb.chunk.js",
+    "main.js.map": "/league-of-guess/static/js/main.de6ddbdb.chunk.js.map",
     "runtime-main.js": "/league-of-guess/static/js/runtime-main.cfa0ece1.js",
     "runtime-main.js.map": "/league-of-guess/static/js/runtime-main.cfa0ece1.js.map",
     "static/css/2.95258f03.chunk.css": "/league-of-guess/static/css/2.95258f03.chunk.css",
     "static/js/2.653b6006.chunk.js": "/league-of-guess/static/js/2.653b6006.chunk.js",
     "static/js/2.653b6006.chunk.js.map": "/league-of-guess/static/js/2.653b6006.chunk.js.map",
     "index.html": "/league-of-guess/index.html",
-    "precache-manifest.766bfd489ab63c6691aa11d2380a7ad1.js": "/league-of-guess/precache-manifest.766bfd489ab63c6691aa11d2380a7ad1.js",
+    "precache-manifest.8e7f0585d8fa6bac509c78a1c2d36182.js": "/league-of-guess/precache-manifest.8e7f0585d8fa6bac509c78a1c2d36182.js",
     "service-worker.js": "/league-of-guess/service-worker.js",
     "static/css/2.95258f03.chunk.css.map": "/league-of-guess/static/css/2.95258f03.chunk.css.map",
     "static/js/2.653b6006.chunk.js.LICENSE.txt": "/league-of-guess/static/js/2.653b6006.chunk.js.LICENSE.txt",
@@ -171,6 +171,6 @@
     "static/js/runtime-main.cfa0ece1.js",
     "static/css/2.95258f03.chunk.css",
     "static/js/2.653b6006.chunk.js",
-    "static/js/main.26beaec0.chunk.js"
+    "static/js/main.de6ddbdb.chunk.js"
   ]
 }
